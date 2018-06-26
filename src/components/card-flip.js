@@ -19,7 +19,7 @@ class CardFlip extends Component {
             if (this.state.isActive) {
                 setTimeout(() => {
                     this.closeButton.current.focus()
-                }, 100)
+                }, 25)
             }
         })
     }
@@ -39,7 +39,7 @@ class CardFlip extends Component {
                 aria-label={`Close ${this.props.memberName}`}
                 onClick={this.closeOverlay.bind(this)}
                 ref={this.closeButton}>X</button>
-            <h5>{this.props.memberName}</h5>
+            <h5 className="team-title">{this.props.memberName}</h5>
             <span className="team-subtitle">{this.props.subtitle}</span>
             <p>{this.props.bio}</p>
             <div className="team-socials">
@@ -62,10 +62,10 @@ class CardFlip extends Component {
                         onClick={this.handleClick.bind(this)}
                         ref={this.toggleButton}
                     >
-                        <div className="team-image">
+                        <span className="team-image">
                             <img src={this.props.image} alt="" />
-                        </div>
-                        <h5>{this.props.memberName}</h5>
+                        </span>
+                        <span className="team-title">{this.props.memberName}</span>
                         <span className="team-subtitle">{this.props.subtitle}</span>
                     </button>
 

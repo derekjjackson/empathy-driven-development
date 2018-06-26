@@ -27,6 +27,7 @@
     text-decoration: underline;
 }
 .team-image {
+    display: block;
     width: 190px;
     height: 190px;
     overflow: hidden;
@@ -37,7 +38,8 @@
     box-shadow: 0 6px 20px rgba(0, 0, 0, 0.07);
     text-align: center;
 }
-.team-content h5 {
+.team-content .team-title {
+    display: block;
     font-size: 18px;
     font-weight: 700;
     line-height: 1;
@@ -113,18 +115,10 @@
 }
 .team-content-overlay p {
     color: #fff;
-    opacity: 0;
     font-size: 8px;
     font-weight: 400;
     line-height: 22px;
     position: relative;
-    font-size: 12px;
-    -webkit-transition: 0.25s ease-in;
-    -o-transition: 0.25s ease-in;
-    transition: 0.25s ease-in;
-}
-.active .team-content-overlay p {
-    opacity: 1;
     font-size: 12px;
 }
 .team-socials {
