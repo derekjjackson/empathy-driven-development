@@ -5,6 +5,7 @@
     outline: none;
 }
 .team-member {
+    display: inline-block;
     position: relative;
 }
 .team-content {
